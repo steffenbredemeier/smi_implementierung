@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+"smi_implementierung\startup_stm32l053xx.o"
+"smi_implementierung\main.o"
+"smi_implementierung\stm32l0xx_it.o"
+"smi_implementierung\stm32l0xx_hal_msp.o"
+"smi_implementierung\stm32l0xx_hal_tim.o"
+"smi_implementierung\stm32l0xx_hal_tim_ex.o"
+"smi_implementierung\stm32l0xx_hal_uart.o"
+"smi_implementierung\stm32l0xx_hal_uart_ex.o"
+"smi_implementierung\stm32l0xx_hal.o"
+"smi_implementierung\stm32l0xx_hal_i2c.o"
+"smi_implementierung\stm32l0xx_hal_i2c_ex.o"
+"smi_implementierung\stm32l0xx_hal_rcc.o"
+"smi_implementierung\stm32l0xx_hal_rcc_ex.o"
+"smi_implementierung\stm32l0xx_hal_flash_ramfunc.o"
+"smi_implementierung\stm32l0xx_hal_flash.o"
+"smi_implementierung\stm32l0xx_hal_flash_ex.o"
+"smi_implementierung\stm32l0xx_hal_gpio.o"
+"smi_implementierung\stm32l0xx_hal_dma.o"
+"smi_implementierung\stm32l0xx_hal_pwr.o"
+"smi_implementierung\stm32l0xx_hal_pwr_ex.o"
+"smi_implementierung\stm32l0xx_hal_cortex.o"
+"smi_implementierung\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "SMI_Implementierung\SMI_Implementierung.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SMI_Implementierung.map" -o SMI_Implementierung\SMI_Implementierung.axf
